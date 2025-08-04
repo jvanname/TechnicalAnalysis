@@ -28,9 +28,10 @@ $x_\alpha=\frac{p_\alpha}{x_\alpha}$, so $x_\alpha^2=p_\alpha$, hence $x_\alpha=
 **Example 1: Continuous probability distribution** Let $S_1=\{(\alpha,\beta):\alpha^2+\beta^2=1\}$ which is the unit circle. Suppose that our training data is a collection
 $(u_k,w_k)$ where $u_k\in U$ and $w_k\in S_1$ for all $k$. When working with real world data, one may need to process the training data so that it is of this form.
 If $(a,b)\in\mathbb{R}^2$, then define $(a,b)^{\otimes n}=(\sqrt{\binom{n}{k}}a^{n-k}b^k)_{k=0}^n$. Define $v_k=w_k^{\otimes n}$ for all $k$. Just as our linear model gives us a probability mass function for a discrete distribution for each input, in this
-case, our linear model gives s probability density function for possible outputs for a 
+case, our linear model gives s probability density function for each input.
 
-
+Suppose that $(A,b)$ is our trained model. Let $w=(A u_k+b)/\|A u_k+b\|$. Then let $f:S_1\rightarrow\mathbb{R}$ be the function defined by setting
+$f(a,b)=\langle w,(a,b)^{\otimes n}\rangle$.
 
 
 **Initialization** The pair $A,b$ is initialized so that $\langle Au_k+b,v_k\rangle>0$ for all $k$. This is usually easy to do if it is possible, but on rare occasions, we will need to use more machine learning to find an input
