@@ -23,6 +23,15 @@ Then $\frac{\partial}{\partial x_\alpha}L(x)=\frac{p_\alpha}{x_\alpha}-\frac{x_\
 $0=\frac{\partial}{\partial x_\alpha}L(x)$ for all $\alpha$ which implies that $\frac{x_\alpha}{x_1^2+\dots+x_n^2}=\frac{p_\alpha}{x_\alpha}$. Since $\|x\|=1$, we have
 $x_\alpha=\frac{p_\alpha}{x_\alpha}$, so $x_\alpha^2=p_\alpha$, hence $x_\alpha=\sqrt{p_\alpha}$. Q.E.D.
 
+**Example 0: Discrete probability distribution** 
+
+**Example 1: Continuous probability distribution** Let $S_1=\{(\alpha,\beta):\alpha^2+\beta^2=1\}$ which is the unit circle. Suppose that our training data is a collection
+$(u_k,w_k)$ where $u_k\in U$ and $w_k\in S_1$ for all $k$. When working with real world data, one may need to process the training data so that it is of this form.
+If $(a,b)\in\mathbb{R}^2$, then define $(a,b)^{\otimes n}=(\sqrt{\binom{n}{k}}a^{n-k}b^k)_{k=0}^n$. Define $v_k=w_k^{\otimes n}$ for all $k$.
+
+
+
+
 **Initialization** The pair $A,b$ is initialized so that $\langle Au_k+b,v_k\rangle>0$ for all $k$. This is usually easy to do if it is possible, but on rare occasions, we will need to use more machine learning to find an input
 $A,b$ where $\langle Au_k+b,v_k\rangle>0$ for all $k$. It is sufficient to initialize $A=\mathbf{0}$ and where $\langle b,v_k\rangle>0$ for all $k$.
 
