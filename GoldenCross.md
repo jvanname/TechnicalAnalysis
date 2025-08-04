@@ -12,14 +12,10 @@ I chose 3 percent because 3 percent is approximately the standard deviation of $
 
 **Results**
 
-\begin{table}[]
-\begin{tabular}{lllll}
- &  &  &  &  \\
- &  &  &  &  \\
- &  &  &  &  \\
- &  &  &  & 
-\end{tabular}
-\end{table}
+W_{
+
+**Statistical significance**
+
 
 **What I did not cover in this analysis**
 
