@@ -4,7 +4,8 @@ Suppose that $X_i$ denotes the closing price of the stock at hour $i$. Let $A$ d
 If $i\in A$, then $X_i$ is clearly defined, but we otherwise define $X_k$ for each so that if $i,j$ are two consecutive elements in $A$, then the set $\{(k,X_k):i<k<j\}$ is colinear.
 
 Let $M_i$ denote the moving average over the past week, and let $N_i$ denote the moving average over the past two weeks. When $M_i>N_i,M_{i-1}<N_{i-1}$, we buy and go long hoping to sell later at a higher price.
-When $M_i<N_i,M_{i-1}>N_{i-1}$ we do the opposite and go short. In order to simplify the analysis and to limit our risk, when we are going long, we put stop and limit orders to ensure that we always attain a 3 percent profit or 3 percent loss. In order to simplify our analysis and algorithm, the only way we close our trade is by using these stop and limit orders.
+When $M_i<N_i,M_{i-1}>N_{i-1}$ we do the opposite and go short. In order to simplify the analysis and to limit our risk, when we are going long, we put stop and limit orders to ensure that we always attain a 3 percent profit or 3 percent loss. In order to simplify our analysis and algorithm, the only way we close our trade is by using these stop and limit orders. To further simplify our analysis, each time we trade, we trade for the same amount. This means that whenever we trade, we always make the same amount of profit or the same amount of loss.
+
 
 I chose 3 percent because 3 percent is approximately the standard deviation of $X_{i+168}/X_i$; the amount that the price varies every week.
 
@@ -12,7 +13,7 @@ I chose 3 percent because 3 percent is approximately the standard deviation of $
 
 **Results**
 
-
+The following chart shows how much profit we trade.
 
 Stock | Uptrend Profit      | Downtrend Profit      | Total Profit | Total uptrend trades | Total downtrend trades |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -23,7 +24,7 @@ NVDA| 5 | -15 | -10 | - | - |
 
 
 **Statistical significance**
-
+If we instead modified our strategy so that we always go long and never go short on each golden cross, then we would have made a statistically significant amount of profit.
 
 **What I did not cover in this analysis**
 
