@@ -9,19 +9,16 @@ When $M_i<N_i,M_{i-1}>N_{i-1}$ we do the opposite and go short. In order to simp
 
 I chose 3 percent because 3 percent is approximately the standard deviation of $X_{i+168}/X_i$; the amount that the price varies every week.
 
-
-
 **Results**
 
 The following chart shows how much profit we trade.
 
 Stock | Uptrend Profit      | Downtrend Profit      | Total Profit | Total uptrend trades | Total downtrend trades |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-AMZN| 14 | -22 | -8 | - | - |
-INTC| 12 | -15 | -3 | - | - |
-MSFT| 4 | -12 | -8 | - | - |
-NVDA| 5 | -15 | -10 | - | - |
-
+AMZN| 14 | -22 | -8 | 100 | 100 |
+INTC| 12 | -15 | -3 | 107 | 108 |
+MSFT| 4 | -12 | -8 | 94 | 94 |
+NVDA| 5 | -15 | -10 | 93 | 93 |
 
 **Statistical significance**
 If we instead modified our strategy so that we always go long and never go short on each golden cross, then we would have made a statistically significant amount of profit.
