@@ -14,12 +14,12 @@ I chose 3 percent because 3 percent is approximately the standard deviation of $
 
 
 
-Stock | Uptrend Profit      | Downtrend Profit      | Total Profit | Total uptrend trades |
-| ------------- | ------------- | ------------- | ------------- | ------------- |
-AMZN| 14 | -22 | -8 | - |
-INTC| 12 | -15 | -3 | - |
-MSFT| 4 | -12 | -8 | - |
-NVDA| 5 | -15 | -10 | - |
+Stock | Uptrend Profit      | Downtrend Profit      | Total Profit | Total uptrend trades | Total downtrend trades |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+AMZN| 14 | -22 | -8 | - | - |
+INTC| 12 | -15 | -3 | - | - |
+MSFT| 4 | -12 | -8 | - | - |
+NVDA| 5 | -15 | -10 | - | - |
 
 
 **Statistical significance**
