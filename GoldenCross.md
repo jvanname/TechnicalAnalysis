@@ -6,6 +6,7 @@ If $i\in A$, then $X_i$ is clearly defined, but we otherwise define $X_k$ for ea
 Let $M_i$ denote the moving average over the past week, and let $N_i$ denote the moving average over the past two weeks. When $M_i>N_i,M_{i-1}<N_{i-1}$, we buy and go long hoping to sell later at a higher price.
 When $M_i<N_i,M_{i-1}>N_{i-1}$ we do the opposite and go short. In order to simplify the analysis and to limit our risk, when we are going long, we put stop and limit orders to ensure that we always attain a 3 percent profit or 3 percent loss. In order to simplify our analysis and algorithm, the only way we close our trade is by using these stop and limit orders. To further simplify our analysis, each time we trade, we trade for the same amount. This means that whenever we trade, we always make the same amount of profit or the same amount of loss.
 
+The timeframe of the data is from May 1, 2018 until August 1, 2025.
 
 I chose 3 percent because 3 percent is approximately the standard deviation of $X_{i+168}/X_i$; the amount that the price varies every week.
 
@@ -20,7 +21,9 @@ INTC| 12 | -15 | -3 | 107 | 108 |
 MSFT| 4 | -12 | -8 | 94 | 94 |
 NVDA| 5 | -15 | -10 | 93 | 93 |
 
-**Statistical significance**
+We observe that for each of the stocks, we would not have made any profit using our original strategy, but a modified strategy would have been profitable for these stocks for the timeframe.
+
+**Statistical significance of modified strategy**
 If we instead modified our strategy so that we always go long and never go short on each golden cross, then we would have made a statistically significant amount of profit.
 
 **What I did not cover in this analysis**
