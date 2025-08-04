@@ -1,0 +1,146 @@
+#Replace filelocation with your databento file and then cut and paste to run the code.
+#The databento file should be the hourly OHLCV data for some stock. In my case, it is for Intel.
+
+
+filelocation="TechAnalysis/XNAS-20250802-55Q44HNCTS/xnas-itch-20180501-20250801.ohlcv-1h.dbn"
+
+
+
+import databento as db
+import pandas as pd
+import numpy as np
+from datetime import datetime
+
+
+
+data_dbn=db.DBNStore.from_file(filelocation)
+
+
+# Here, we are using hourly OHLCV-data from Amazon,Nvidia,Microsoft, and Intel to form our conclusions
+
+
+# Making the data into a pandas dataframe.
+data_pd=data_dbn.to_df()
+
+#ll is the number of entries in the dataframe.
+ll=data_pd.close.size
+
+#kys is the set of all keys. The keys are timestamps which can be converted into integers.
+kys=data_pd.close.keys()
+
+allsym=np.unique(data_pd.symbol)
+# ['AMZN', 'INTC', 'MSFT', 'NVDA']
+
+
+#sym="MSFT";
+#sym='INTC'
+sym=allsym[0];
+#smalldata is just the data that we are using for this experiment. smalldata depends on the stock in question. We may need to so this when we have multiple stocks in the dataframe and need to sort the stocks.
+#We also only want to consider the closing price and the time.
+
+ini=0
+for i in range(0,ll-1):
+ if data_pd.symbol[i]==sym:
+  ini=datetime.timestamp(kys[i]); break;
+
+
+
+smalldata=[];
+for i in range(0,ll-1):
+ if data_pd.symbol[i]==sym:
+  smalldata.append(((datetime.timestamp(kys[i])-ini)/3600,data_pd.close[i]))
+
+# Since the stock market is not always open, tradehours is the array that returns 1 when the market is open and 0 otherwise.
+
+tradehours=np.zeros(int(smalldata[-1][0])+1);
+for i in range(0,len(smalldata)):
+ tradehours[int(smalldata[i][0])]=1
+
+
+
+hourlyclose=np.zeros(int(smalldata[-1][0])+1)
+
+lr=len(smalldata);
+
+for i in range(0,lr-1):
+ a=smalldata[i][1];
+ b=smalldata[i+1][1];
+ sp=smalldata[i+1][0]-smalldata[i][0];
+ print([a,b]);
+ for j in range(int(smalldata[i][0]),int(smalldata[i+1][0])+1):
+  hourlyclose[j]=(int(smalldata[i+1][0])-j)/sp*a+(j-smalldata[i][0])/sp*b; print((j,hourlyclose[j]));
+
+closesum=[0];
+a=0;
+for i in range(0,len(hourlyclose)):
+ a+=hourlyclose[i];
+ closesum.append(a)
+
+uptr=[];
+downtr=[];
+for i in range(336,len(hourlyclose)):
+ ii=i+1;
+ aa=closesum[i]-2*closesum[i-168]+closesum[i-336];
+ bb=closesum[ii]-2*closesum[ii-168]+closesum[ii-336];
+ if aa<0 and bb>0:
+  uptr.append(i)
+ if aa>0 and bb<0:
+  downtr.append(i)
+
+uptr2=[];
+downtr2=[];
+
+weeklyaverage=[];
+for i in range(0,len(closesum)-168): 
+ weeklyaverage.append((closesum[i+168]-closesum[i])/168);
+
+biweeklyaverage=[];
+for i in range(0,len(closesum)-336): 
+ biweeklyaverage.append((closesum[i+336]-closesum[i])/336);
+
+for i in range(0,len(hourlyclose)-336):
+ ii=i+1;
+ if weeklyaverage[i+168]<biweeklyaverage[i] and weeklyaverage[ii+168]>biweeklyaverage[ii]:
+  uptr2.append(i+336);
+ if weeklyaverage[i+168]>biweeklyaverage[i] and weeklyaverage[ii+168]<biweeklyaverage[ii]:
+  downtr2.append(i+336);
+
+# uptr==uptr2 and downtr=downtr2. We check this to make sure that we have programmed it correctly.
+
+
+def tradefunction(ii):
+ jj=ii;
+ while True:
+  jj+=1;
+  if (tradehours[jj]==1.):
+   break;
+ b=hourlyclose[jj];
+ a=b*0.97;
+ c=b*1.03;
+ kk=jj;
+ while True:
+  kk+=1;
+  if hourlyclose[kk]>c:
+   print([hourlyclose[kk]/b,1]); return 1;
+  if hourlyclose[kk]<a:
+   print([hourlyclose[kk]/b,-1]); return -1;
+
+# qq is the amount of times we win minus the amount of times we lose when we trade.
+# qa is the amount of times we win minus the amount of times we lose when there is an uptrend.
+# qb is the amount of times we win minus the amount of times we lose when there is an downtrend.
+# len(uptr)+len(downtr) is the number of trades.
+
+qq=0;
+qa=0;
+qb=0;
+for a in uptr:
+ u=tradefunction(a);
+ qa+=u;
+ qq+=u;
+
+for b in downtr:
+ u=tradefunction(b);
+ qb-=u;
+ qq-=u;
+
+
