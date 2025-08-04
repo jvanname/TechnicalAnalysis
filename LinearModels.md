@@ -18,7 +18,7 @@ Proof: Suppose that $x=x_1 e_1+\dots+x_r e_r$. Then $\langle x,e_k\rangle=x_k$ a
 
 Then $\frac{\partial}{\partial x_\alpha}L(x)=\frac{p_\alpha}{x_\alpha}-\frac{x_\alpha}{x_1^2+\dots+x_n^2}$. If $L(x)$ is locally maximized, then for each $\alpha$, we have
 $0=\frac{\partial}{\partial x_\alpha}L(x)$ for all $\alpha$ which implies that $\frac{x_\alpha}{x_1^2+\dots+x_n^2}=\frac{p_\alpha}{x_\alpha}$. Since $\|x\|=1$, we have
-$x_\alpha=\frac{p_\alpha}{x_\alpha}$, so $x_\alpha^2=p_\alpha$, hence $x_\alpha=\sqrt{p_\alpha}$.
+$x_\alpha=\frac{p_\alpha}{x_\alpha}$, so $x_\alpha^2=p_\alpha$, hence $x_\alpha=\sqrt{p_\alpha}$. Q.E.D.
 
 
 
