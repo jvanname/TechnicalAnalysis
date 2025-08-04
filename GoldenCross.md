@@ -12,10 +12,10 @@ I chose 3 percent because 3 percent is approximately the standard deviation of $
 
 **Results**
 
-| Column 1      | Column 2      |
-| ------------- | ------------- |
-| Cell 1, Row 1 | Cell 2, Row 1 |
-| Cell 1, Row 2 | Cell 1, Row 2 |
+| Uptrend Profit      | Downtrend Profit      | Total Profit |
+| ------------- | ------------- | ------------- |
+| Cell 1, Row 1 | Cell 2, Row 1 | Cell 2, Row 1 |
+| Cell 1, Row 2 | Cell 1, Row 2 | Cell 2, Row 1 |
 
 **Statistical significance**
 
