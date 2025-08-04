@@ -31,8 +31,7 @@ If $(a,b)\in\mathbb{R}^2$, then define $(a,b)^{\otimes n}=(\sqrt{\binom{n}{k}}a^
 case, our linear model gives s probability density function for each input.
 
 Suppose that $(A,b)$ is our trained model. Let $w=(A u_k+b)/\|A u_k+b\|$. Then let $f:S_1\rightarrow\mathbb{R}$ be the function defined by setting
-$f(a,b)=\langle w,(a,b)^{\otimes n}\rangle$.
-
+$f(a,b)=\langle w,(a,b)^{\otimes n}\rangle$. Let $g=f/\|f\|_2$ where $\|*\|_2$ denotes the $L_2$-norm with respect to the Haar probability measure on $S_1$ and let $h=g^2$. Then $h$ is a probability density function on the circle $S_1$ that represents the distribution of possibe values of $w_k$.
 
 **Initialization** The pair $A,b$ is initialized so that $\langle Au_k+b,v_k\rangle>0$ for all $k$. This is usually easy to do if it is possible, but on rare occasions, we will need to use more machine learning to find an input
 $A,b$ where $\langle Au_k+b,v_k\rangle>0$ for all $k$. It is sufficient to initialize $A=\mathbf{0}$ and where $\langle b,v_k\rangle>0$ for all $k$.
