@@ -12,8 +12,10 @@ I chose 3 percent because 3 percent is approximately the standard deviation of $
 
 **Results**
 
-
-
+\begin{bmatrix}
+1 & 2\\
+3 & 4
+\end{bmatrix}
 
 **What I did not cover in this analysis**
 
