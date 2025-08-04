@@ -27,7 +27,8 @@ $x_\alpha=\frac{p_\alpha}{x_\alpha}$, so $x_\alpha^2=p_\alpha$, hence $x_\alpha=
 
 **Example 1: Continuous probability distribution** Let $S_1=\{(\alpha,\beta):\alpha^2+\beta^2=1\}$ which is the unit circle. Suppose that our training data is a collection
 $(u_k,w_k)$ where $u_k\in U$ and $w_k\in S_1$ for all $k$. When working with real world data, one may need to process the training data so that it is of this form.
-If $(a,b)\in\mathbb{R}^2$, then define $(a,b)^{\otimes n}=(\sqrt{\binom{n}{k}}a^{n-k}b^k)_{k=0}^n$. Define $v_k=w_k^{\otimes n}$ for all $k$.
+If $(a,b)\in\mathbb{R}^2$, then define $(a,b)^{\otimes n}=(\sqrt{\binom{n}{k}}a^{n-k}b^k)_{k=0}^n$. Define $v_k=w_k^{\otimes n}$ for all $k$. Just as our linear model gives us a probability mass function for a discrete distribution for each input, in this
+case, our linear model gives s probability density function for possible outputs for a 
 
 
 
