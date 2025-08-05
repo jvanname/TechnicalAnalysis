@@ -48,6 +48,18 @@ $\langle w,e_k\rangle^2$ but we know that there is a zero probability that $(u_j
 **Generalization**
 
 Define a fitness function $F_{D,p}(A,b)$ by setting 
-$F_{D,p}(A,b)=(\sum_{k=1}^{r}(\frac{\langle Au_k+b,v_k\rangle}{\|Au_k+b\|\cdot\|v_k\|})^p/r)^{1/p}$. Set $F_{D,0}(A,b)=F_D(A,b)$.
+$F_{D,p}(A,b)=(\sum_{k=1}^{r}(\frac{|\langle Au_k+b,v_k\rangle|}{\|Au_k+b\|\cdot\|v_k\|})^p/r)^{1/p}$. Set $F_{D,0}(A,b)=F_D(A,b)$. 
+
+Suppose that $e_1,\dots,e_n$ is again a basis for $V$ and that $v_k\in\{e_1,\dots,e_n\}$ for all $k$. 
+
+Proposition: Suppose that $e_1,\dots,e_n$ is a basis for $V$ and $L(x)=\sum_{k=1}^n p_k(|\frac{\langle x,e_k\rangle|^p}{\|x\|})^{1/p}$. FINISH.
+
+Proof: Observe that $L(x)=\frac{(p_1x_1^p+\dots+p_rx_r^p)^{1/p})}{\|x\|}$, so $\log(f(x))=\frac{1}{p}\log(p_1x_1^p+\dots+p_rx_r^p)-\frac{1}{2}\log(x_1^2+\dots+x_r^2)$. Therefore,
+
+$\frac{\partial}{\partial x_\alpha}f(x)=\frac{1}{p}\cdot\frac{p_a\cdot p\cdot x_\alpha^{p-1}}{p_1x_1^p+\dots+p_rx_r^p}-\frac{1}{2}\cdot\frac{2\cdot x_\alpha}{x_1^2+\dots+x_r^2}$.
+
+
+
+
 
 
