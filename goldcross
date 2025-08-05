@@ -33,7 +33,10 @@ allsym=np.unique(data_pd.symbol)
 
 #sym="MSFT";
 #sym='INTC'
-sym=allsym[0];
+#sym=allsym[0];
+sym='QUBT';
+
+
 #smalldata is just the data that we are using for this experiment. smalldata depends on the stock in question. We may need to so this when we have multiple stocks in the dataframe and need to sort the stocks.
 #We also only want to consider the closing price and the time.
 
