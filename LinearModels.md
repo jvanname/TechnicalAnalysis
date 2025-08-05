@@ -43,3 +43,9 @@ $A,b$ where $\langle Au_k+b,v_k\rangle>0$ for all $k$. It is sufficient to initi
 **Disadvantages:** Models trained to maximize $F_D$ are linear neural networks, so they are not powerful enough to learn sophisticated patterns. Training is sensitive to outliers because outliers change the domain of $F_D$. 
 Suppose that $w=\frac{Au_j+b}{\|Au_j+b\|}$ and $v_j\in\{e_1,\dots,e_n\}$. Then the amplitude $\langle w,e_k\rangle$ is possibly negative which is paradoxical; our analysis indicates that the probability that $v_j=e_k$ should be
 $\langle w,e_k\rangle^2$ but we know that there is a zero probability that $(u_j,e_k)$ belongs to the training data. The paradoxical nature of this observation is due mainly to the simplicity of the trained model. There is no closed form expression that tells us the local maximum of $F_D$ and we must train using gradient ascent which may be slow.
+
+
+**Generalization**
+
+
+
