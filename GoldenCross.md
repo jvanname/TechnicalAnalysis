@@ -20,7 +20,7 @@ AMZN| 14 | -22 | -8 | 100 | 100 |
 INTC| 12 | -15 | -3 | 107 | 108 |
 MSFT| 4 | -12 | -8 | 94 | 94 |
 NVDA| 5 | -15 | -10 | 93 | 93 |
-
+QUBT| 3 | -12 | -9 | 57 | 58 |
 We observe that for each of the stocks, we would not have made any profit using our original strategy, but a modified strategy would have been profitable for these stocks for the timeframe.
 
 **Statistical significance of modified strategy**
