@@ -48,4 +48,6 @@ $\langle w,e_k\rangle^2$ but we know that there is a zero probability that $(u_j
 **Generalization**
 
 Define a fitness function $F_{D,p}(A,b)$ by setting 
-$F_{D,p}(A,b)=(\sum_{k=1}^{r}(\frac{\langle Au_k+b,v_k\rangle}{\|Au_k+b\|\cdot\|v_k\|})^p/r)^{1/p}$.
+$F_{D,p}(A,b)=(\sum_{k=1}^{r}(\frac{\langle Au_k+b,v_k\rangle}{\|Au_k+b\|\cdot\|v_k\|})^p/r)^{1/p}$. Set $F_{D,0}(A,b)=F_D(A,b)$.
+
+
