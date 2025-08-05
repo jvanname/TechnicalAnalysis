@@ -61,7 +61,7 @@ $\frac{\partial}{\partial x_\alpha}f(x)=\frac{1}{p}\cdot\frac{p_a\cdot p\cdot x_
 Thus, $\nabla_X\log(f(x))=0$ precisely when %\frac{p_\alpha x_\alpha^{p-1}}{p_1x_1^p+\dots+x_rx_r^p}=\frac{x_\alpha}{x_1^2+\dots+x_r^2}$ for all $\alpha$. 
 
 Therefore, there is some $\lambda$ where $p_\alpha x_\alpha^{p-1}=\lambda x_\alpha$. In this case, $p_\alpha=\lambda x_\alpha^{2-p}$. Since $1=p_1+\dots+p_r=\lambda x_1^{2-p}+\dots+\lambda x_r^{2-p}$, we know that
-$\lambda=(x_1^{2-p}+\dots+x_r^{2-p})^{-1}$.
+$\lambda=(x_1^{2-p}+\dots+x_r^{2-p})^{-1}$, so $p_\alpha=\frac{x_\alpha^{2-p}}{x_1^{2-p}+\dots+x_r^{2-p}}$.
 
 
 
