@@ -8,7 +8,7 @@ When $M_i<N_i,M_{i-1}>N_{i-1}$ we do the opposite and go short. In order to simp
 
 The timeframe of the data is from May 1, 2018 until August 1, 2025.
 
-I chose 3 percent because 3 percent is approximately the standard deviation of $X_{i+168}/X_i$; the amount that the price varies every week.
+I chose 3 percent because 3 percent is comparable to the standard deviation of $X_{i+168}/X_i$; the amount that the price varies every week.
 
 **Results**
 
@@ -25,10 +25,10 @@ QUBT| 3 | -12 | -9 | 57 | 58 |
 We observe that for each of the stocks, we would not have made any profit using our original strategy, but a modified strategy would have been profitable for these stocks for the timeframe.
 
 **Statistical significance of modified strategy**
-If we instead modified our strategy so that we always go long and never go short on each golden cross, then we would have made a statistically significant amount of profit.
+If we instead modified our strategy so that we always go long and never go short on each golden cross, then we would have made a statistically significant amount of profit for the stocks in question.
 
 **What I did not cover in this analysis**
 
-In this analysis, I did not take into consideration slippage, fees, and dividends.
+In this analysis, I did not take into consideration slippage, fees, and dividends, but I included some stocks such as QUBT that do not give dividends to get a picture of what happens in that case as well.
 
 In this analysis, I decided to compare the 1 week moving average with the 2 week moving average which is a rather short timeframe. ig-academy defined the golden cross as where the 50 day moving average crosses the 200 day moving average. This is easy to change though.
