@@ -73,6 +73,8 @@ for i in range(0,lr-1):
  for j in range(int(smalldata[i][0]),int(smalldata[i+1][0])+1):
   hourlyclose[j]=(int(smalldata[i+1][0])-j)/sp*a+(j-smalldata[i][0])/sp*b; print((j,hourlyclose[j]));
 
+# closesum is the list of all partial sums of the hourlyclose.
+
 closesum=[0];
 a=0;
 for i in range(0,len(hourlyclose)):
@@ -110,6 +112,8 @@ for i in range(0,len(hourlyclose)-336):
 
 # uptr==uptr2 and downtr=downtr2. We check this to make sure that we have programmed it correctly.
 
+# tradefunction returns 1 if we make a profit when going long and it returns 1 if we make a loss when going long.
+# tradefunction uses stops and limits to take a profit or loss whenever the value of the stock increases or decreases by 3 percent.
 
 def tradefunction(ii):
  jj=ii;
