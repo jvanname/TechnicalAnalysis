@@ -27,14 +27,19 @@ ll=data_pd.close.size
 #kys is the set of all keys. The keys are timestamps which can be converted into integers.
 kys=data_pd.close.keys()
 
+#allsym is the collection of all stocks in the data file.
+
 allsym=np.unique(data_pd.symbol)
 
+#sym is the name of the stock that we are running the test on. By default, sym refers to the zeroth stock, but there could be other stocks here, so one might want to update this line.
+
 sym=allsym[0];
-#sym='QUBT';
 
 
-#smalldata is just the data that we are using for this experiment. smalldata depends on the stock in question. We may need to so this when we have multiple stocks in the dataframe and need to sort the stocks.
+#smalldata is just the data that we are using for this experiment. smalldata depends on the stock named 'sym' in question. We may need to so this when we have multiple stocks in the dataframe.
 #We also only want to consider the closing price and the time.
+
+#smalldata is a list where each entry in this list is a pair (x,y) where x is the number of hours since the experiment began and y is the closing price.
 
 ini=0
 for i in range(0,ll-1):
@@ -54,7 +59,7 @@ tradehours=np.zeros(int(smalldata[-1][0])+1);
 for i in range(0,len(smalldata)):
  tradehours[int(smalldata[i][0])]=1
 
-
+# We represent the data in 'smalldata' using 'tradehours' and 'hourlyclose'. 'hourlyclose' is very easy to work with since the i-th entry in the list is the price at hour i, but I had to fill in missing entries for when the market was closed.
 
 hourlyclose=np.zeros(int(smalldata[-1][0])+1)
 
