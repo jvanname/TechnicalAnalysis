@@ -1,5 +1,6 @@
+#READ THIS BEFORE USING CODE.
 #Replace filelocation with your databento file and then cut and paste to run the code.
-#The databento file should be the hourly OHLCV data for some stock. In my case, it is for Intel.
+#The databento file should be the hourly OHLCV data for some stock or small collection of stocks.
 
 
 #filelocation="TechAnalysis/XNAS-20250802-55Q44HNCTS/xnas-itch-20180501-20250801.ohlcv-1h.dbn"
@@ -17,7 +18,6 @@ data_dbn=db.DBNStore.from_file(filelocation)
 
 # Here, we are using hourly OHLCV-data from Amazon,Nvidia,Microsoft, and Intel to form our conclusions
 
-
 # Making the data into a pandas dataframe.
 data_pd=data_dbn.to_df()
 
@@ -28,13 +28,9 @@ ll=data_pd.close.size
 kys=data_pd.close.keys()
 
 allsym=np.unique(data_pd.symbol)
-# ['AMZN', 'INTC', 'MSFT', 'NVDA']
 
-
-#sym="MSFT";
-#sym='INTC'
-#sym=allsym[0];
-sym='QUBT';
+sym=allsym[0];
+#sym='QUBT';
 
 
 #smalldata is just the data that we are using for this experiment. smalldata depends on the stock in question. We may need to so this when we have multiple stocks in the dataframe and need to sort the stocks.
