@@ -1,3 +1,5 @@
+In this post, we try to determine whether one can use the golden cross (the points of intersections between moving averages) in order to make a profit while trading stocks. We use the stocks of both established companies that pay dividends as well as startups which currently do not pay dividends to shareholders.
+
 In this post, we use the hourly closing price of stocks to try to predict whether the price will go up or down in the future.
 
 Suppose that $X_i$ denotes the closing price of the stock at hour $i$. Let $A$ denote the set of hours when the stock market is open (and therefore where we have a well-defined price).
