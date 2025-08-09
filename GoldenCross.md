@@ -13,7 +13,7 @@ If $i\in A$, then $X_i$ is clearly defined, but we otherwise define $X_k$ for ea
 Let $M_i$ denote the moving average over the past week, and let $N_i$ denote the moving average over the past two weeks. When $M_i>N_i,M_{i-1}<N_{i-1}$, we buy and go long hoping to sell later at a higher price.
 When $M_i<N_i,M_{i-1}>N_{i-1}$ we do the opposite and go short. In order to simplify the analysis and to limit our risk, when we are going long, we put stop and limit orders to ensure that we always attain a 3 percent profit or 3 percent loss. In order to simplify our analysis and algorithm, the only way we close our trade is by using these stop and limit orders. To further simplify our analysis, each time we trade, we trade for the same amount. This means that whenever we trade, we always make the same amount of profit or the same amount of loss.
 
-The timeframe of the data is from May 1, 2018 until August 1, 2025.
+The timeframe of the data is from May 1, 2018 until approximately August 1, 2025.
 
 I chose 3 percent because 3 percent is comparable to the standard deviation of $X_{i+168}/X_i$; the amount that the price varies every week.
 
