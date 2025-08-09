@@ -19,7 +19,7 @@ I chose 3 percent because 3 percent is comparable to the standard deviation of $
 
 **Results**
 
-The following chart shows how much profit we trade. Here we calculate the profit as the number of
+The following chart shows how much profit we trade. Here we calculate the profit as the number of trades in which we make a profit minus the number of trades in which we make a loss.
 
 Stock | Uptrend Profit      | Downtrend Profit      | Total Profit | Total uptrend trades | Total downtrend trades |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
