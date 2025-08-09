@@ -32,10 +32,8 @@ PLTR|-7 | -13 | -20|67|67|
 QBTS|-13| 1 | -12 | 41| 41|
 CIFR|-3| 4 | 1 | 57 |58 |
 
-We observe that for each of the stocks, we would not have made any profit using our original strategy, but a modified strategy would have been profitable for these stocks for the timeframe.
-
 **Statistical significance of modified strategy**
-If we instead modified our strategy so that we always go long and never go short on each golden cross, then we would have made a statistically significant amount of profit for the stocks in question.
+It turns out that if we just take into consideration the startups QUBT,PLTR,QBTS,CIFR, we make a statistically significant loss in the sense that there is a 3 percent chance that we would have done worse. This suggests that if we simply took the opposite strategy, we may have made a profit.
 
 **What I did not cover in this analysis**
 
