@@ -19,7 +19,7 @@ I chose 3 percent because 3 percent is comparable to the standard deviation of $
 
 **Results**
 
-The following chart shows how much profit we trade. Here we calculate the profit as the number of trades in which we make a profit minus the number of trades in which we make a loss.
+The following chart shows how much profit we trade. Here we calculate the profit as the number of trades in which we make a profit minus the number of trades in which we make a loss. The column 'Uptrend Profit' and 'total uptrend trades' refer to the trades and the profits made starting at the point $i$ where $M_i>N_i,M_{i-1}<N_{i-1}$. The other columns have analogous definitions.
 
 Stock | Uptrend Profit      | Downtrend Profit      | Total Profit | Total uptrend trades | Total downtrend trades |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
