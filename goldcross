@@ -35,7 +35,7 @@ allsym=np.unique(data_pd.symbol)
 
 #sym is the name of the stock that we are running the test on. By default, sym refers to the zeroth stock, but there could be other stocks here, so one might want to update this line.
 
-sym=allsym[0];
+sym=allsym[1];
 
 
 #smalldata is just the data that we are using for this experiment. smalldata depends on the stock named 'sym' in question. We may need to so this when we have multiple stocks in the dataframe.
