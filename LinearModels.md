@@ -52,7 +52,7 @@ $F_{D,p}(A,b)=(\sum_{k=1}^{r}(\frac{|\langle Au_k+b,v_k\rangle|}{\|Au_k+b\|\cdot
 
 Suppose that $e_1,\dots,e_n$ is again a basis for $V$ and that $v_k\in\{e_1,\dots,e_n\}$ for all $k$. 
 
-Proposition: Suppose that $e_1,\dots,e_n$ is a basis for $V$ and $L(x)=\sum_{k=1}^n p_k(|\frac{\langle x,e_k\rangle|^p}{\|x\|})^{1/p}$, and $x_j>0$ for all $j$. Then
+Proposition: Suppose that $e_1,\dots,e_n$ is a basis for $V$ and $L(x)=\sum_{k=1}^n p_k(|\frac{\langle x,e_k\rangle|^p}{\|x\|})^{1/p}$. If $\langle x,e_j\rangle>0$ for all $j$ and $L(x)$ is locally maximized, then
 $p_\alpha=\frac{x_\alpha^{2-p}}{x_1^{2-p}+\dots+x_r^{2-p}}$ for all $\alpha$.
 
 Proof: Observe that $L(x)=\frac{(p_1x_1^p+\dots+p_rx_r^p)^{1/p})}{\|x\|}$, so $\log(f(x))=\frac{1}{p}\log(p_1x_1^p+\dots+p_rx_r^p)-\frac{1}{2}\log(x_1^2+\dots+x_r^2)$. Therefore,
