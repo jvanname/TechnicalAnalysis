@@ -30,7 +30,7 @@ NVDA| 5 | -15 | -10 | 93 | 93 |
 QUBT| 3 | -12 | -9 | 57 | 58 |
 PLTR|-7 | -13 | -20|67|67|
 QBTS|-13| 1 | -12 | 41| 41|
-
+CIFR|-3| 4 | 1 | 57 |58 |
 
 We observe that for each of the stocks, we would not have made any profit using our original strategy, but a modified strategy would have been profitable for these stocks for the timeframe.
 
