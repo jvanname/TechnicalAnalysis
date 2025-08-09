@@ -5,8 +5,8 @@
 
 #filelocation="TechAnalysis/XNAS-20250802-55Q44HNCTS/xnas-itch-20180501-20250801.ohlcv-1h.dbn"
 #filelocation="TechAnalysis/XNAS-20250805-9NLJKJK7RY/xnas-itch-20180501-20250804.ohlcv-1h.dbn"
-filelocation="TechAnalysis/XNAS-20250809-4T7D5GKHDC/xnas-itch-20200930-20250807.ohlcv-1h.dbn"
-
+#filelocation="TechAnalysis/XNAS-20250809-4T7D5GKHDC/xnas-itch-20200930-20250807.ohlcv-1h.dbn"
+filelocation="TechAnalysis/XNAS-20250809-BCK4XLQTJE/xnas-itch-20210830-20250808.ohlcv-1h.dbn";
 
 import databento as db
 import pandas as pd
