@@ -1,4 +1,9 @@
+**Broad Description**
+
 In this post, we try to determine whether one can use the golden cross (the points of intersections between moving averages) in order to make a profit while trading stocks. We use the stocks of both established companies that pay dividends as well as startups which currently do not pay dividends to shareholders.
+
+**More technical details**
+
 
 In this post, we use the hourly closing price of stocks to try to predict whether the price will go up or down in the future.
 
