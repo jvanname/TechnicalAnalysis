@@ -10,8 +10,8 @@ In this post, we use the hourly closing price of stocks to try to predict whethe
 Suppose that $X_i$ denotes the closing price of the stock at hour $i$. Let $A$ denote the set of hours when the stock market is open (and therefore where we have a well-defined price).
 If $i\in A$, then $X_i$ is clearly defined, but we otherwise define $X_k$ for each so that if $i,j$ are two consecutive elements in $A$, then the set $\{(k,X_k):i<k<j\}$ is colinear.
 
-Let $M_i$ denote the moving average over the past week, and let $N_i$ denote the moving average over the past two weeks. When $M_i>N_i,M_{i-1}<N_{i-1}$, we buy and go long hoping to sell later at a higher price.
-When $M_i<N_i,M_{i-1}>N_{i-1}$ we do the opposite and go short. In order to simplify the analysis and to limit our risk, when we are going long, we put stop and limit orders to ensure that we always attain a 3 percent profit or 3 percent loss. In order to simplify our analysis and algorithm, the only way we close our trade is by using these stop and limit orders. To further simplify our analysis, each time we trade, we trade for the same amount. This means that whenever we trade, we always make the same amount of profit or the same amount of loss.
+Let $M_i$ denote the moving average over the past week, and let $N_i$ denote the moving average over the past two weeks. When $M_i>N_i,M_{i-1}<N_{i-1}$, we buy and go long hoping to sell later at a higher price because we believe the market is in an uptrend.
+When $M_i<N_i,M_{i-1}>N_{i-1}$ we do the opposite and go short because we believe the market is a downtrend. In order to simplify the analysis and to limit our risk, when we are going long, we put stop and limit orders to ensure that we always attain a 3 percent profit or 3 percent loss. In order to simplify our analysis and algorithm, the only way we close our trade is by using these stop and limit orders. To further simplify our analysis, each time we trade, we trade for the same amount. This means that whenever we trade, we always make the same amount of profit or the same amount of loss.
 
 The timeframe of the data is from May 1, 2018 until approximately August 1, 2025.
 
@@ -19,7 +19,7 @@ I chose 3 percent because 3 percent is comparable to the standard deviation of $
 
 **Results**
 
-The following chart shows how much profit we trade.
+The following chart shows how much profit we trade. Here we calculate the profit as the number of
 
 Stock | Uptrend Profit      | Downtrend Profit      | Total Profit | Total uptrend trades | Total downtrend trades |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
