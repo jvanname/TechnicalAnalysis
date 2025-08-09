@@ -33,7 +33,7 @@ QBTS|-13| 1 | -12 | 41| 41|
 CIFR|-3| 4 | 1 | 57 |58 |
 
 **Statistical significance of modified strategy**
-It turns out that if we just take into consideration the startups QUBT,PLTR,QBTS,CIFR, we make a statistically significant loss in the sense that there is a 3 percent chance that we would have done worse. This suggests that if we simply took the opposite strategy, we may have made a profit.
+It turns out that if we just take into consideration the startups QUBT,PLTR,QBTS,CIFR, we make a statistically significant loss in the sense that there is a 3 percent chance that we would have done worse. This suggests that if we simply took the opposite strategy, we may have made a statistically significant profit.
 
 **What I did not cover in this analysis**
 
