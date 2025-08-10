@@ -2,6 +2,8 @@
 
 In this post, we try to determine whether one can use the golden cross (the points of intersections between moving averages) in order to make a profit while trading stocks. We use the stocks of both established companies that pay dividends as well as startups which currently do not pay dividends to shareholders.
 
+The code for this project is in a document titled 'goldencross'.
+
 **More technical details**
 
 
