@@ -37,6 +37,4 @@ It turns out that if we just take into consideration the startups QUBT,PLTR,QBTS
 
 **What I did not cover in this analysis**
 
-In this analysis, I did not take into consideration slippage, fees, and dividends, but I included some stocks such as QUBT that do not give dividends.
-
-In this analysis, I decided to compare the 1 week moving average with the 2 week moving average which is a rather short timeframe. ig-academy defined the golden cross as where the 50 day moving average crosses the 200 day moving average. This is easy to change though.
+In this analysis, I did not take into consideration slippage, fees, and dividends, but I included some stocks such as QUBT that do not give dividends. In this analysis, I decided to compare the 1 week moving average with the 2 week moving average which is a rather short timeframe. ig-academy defined the golden cross as where the 50 day moving average crosses the 200 day moving average. This is easy to change though. I also did not choose very many stocks to analyze. 
