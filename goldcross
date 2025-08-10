@@ -1,6 +1,8 @@
 #READ THIS BEFORE USING CODE.
 #Replace filelocation with your databento file and then cut and paste to run the code.
 #The databento file should be the hourly OHLCV data for some stock or small collection of stocks.
+#In the case where there are multiple stocks, one may need to update the variable 'sym' so that it selects the right stock.
+
 
 filelocation="TechAnalysis/XNAS-20250809-BCK4XLQTJE/xnas-itch-20210830-20250808.ohlcv-1h.dbn";
 
