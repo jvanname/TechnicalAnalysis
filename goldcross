@@ -133,6 +133,7 @@ def tradefunction(ii):
 # qq is the amount of times we win minus the amount of times we lose when we trade.
 # qa is the amount of times we win minus the amount of times we lose when there is an uptrend.
 # qb is the amount of times we win minus the amount of times we lose when there is an downtrend.
+# qq,qa,qb are units of profit that we earn.
 # we can think of qq,qa,qb as profit estimates without taking into consideration other factors such as slippage.
 # len(uptr)+len(downtr) is the number of trades.
 
