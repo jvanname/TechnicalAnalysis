@@ -10,9 +10,9 @@ import numpy as np
 from datetime import datetime
 
 
+# data_dbn is the databento file with the hourly OHLCV data for one or several stocks but hopefully not too many.
 
 data_dbn=db.DBNStore.from_file(filelocation)
-
 
 # Here, we are using hourly OHLCV-data from Amazon,Nvidia,Microsoft, and Intel to form our conclusions
 
