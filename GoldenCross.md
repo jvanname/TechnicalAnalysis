@@ -7,7 +7,7 @@ In this post, we try to determine whether one can use the golden cross (the poin
 
 In this post, we use the hourly closing price of stocks to try to predict whether the price will go up or down in the future and also to determine whether our strategy results in a loss or a profit.
 
-Suppose that $X_i$ denotes the closing price of the stock at hour $i$. Let $A$ denote the set of hours when the stock market is open (and therefore where we have a well-defined price).
+Suppose that $X_i$ denotes the closing price of the stock at hour $i$. Let $A$ denote the set of hours where we have a price in our data set (I assume that this is when the stock market is open).
 If $i\in A$, then $X_i$ is clearly defined, but we otherwise define $X_k$ for each so that if $i,j$ are two consecutive elements in $A$, then the set $\{(k,X_k):i<k<j\}$ is colinear.
 
 Let $M_i$ denote the moving average over the past week, and let $N_i$ denote the moving average over the past two weeks. When $M_i>N_i,M_{i-1}<N_{i-1}$, we buy and go long hoping to sell later at a higher price because we believe the market is in an uptrend.
