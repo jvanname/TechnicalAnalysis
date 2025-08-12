@@ -1,8 +1,8 @@
+This is a submission by Joseph Van Name where I use some technical analysis without machine learning to obtain a trading strategy. 
+
 **Broad Description**
 
-In this post, we try to determine whether one can use the golden cross (the points of intersections between moving averages) in order to make a profit while trading stocks. We use the stocks of both established companies that pay dividends as well as startups which currently do not pay dividends to shareholders.
-
-The code for this project is in a document titled 'goldcross'.
+In this post, we try to determine whether one can use the golden cross (the points of intersections between moving averages) in order to make a profit while trading stocks. We use the stocks of both established companies that pay dividends as well as startups which currently do not pay dividends to shareholders. The code for this project is in a document titled 'goldcross'.
 
 **More technical details**
 
@@ -35,7 +35,7 @@ QBTS|-13| 1 | -12 | 41| 41|
 CIFR|-3| 4 | 1 | 57 |58 |
 
 **Statistical significance of modified strategy**
-It turns out that if we just take into consideration the startups QUBT,PLTR,QBTS,CIFR, we make a statistically significant loss in the sense that there is a 3 percent chance that we would have done worse. This suggests that if we simply took the opposite strategy, we may have made a statistically significant profit. 
+It turns out that if we just take into consideration the startups QUBT,PLTR,QBTS,CIFR, we make a statistically significant loss in the sense that there is a 3 percent chance that we would have done worse. This suggests that if we simply took the opposite strategy, we may have made a statistically significant profit. This indicates that at the golden cross, the price more likely reverts back to the mean rather than continues with a trend.
 
 **What I did not cover in this analysis**
 
