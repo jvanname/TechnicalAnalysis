@@ -68,3 +68,10 @@ $\lambda=(x_1^{2-p}+\dots+x_r^{2-p})^{-1}$, so $p_\alpha=\frac{x_\alpha^{2-p}}{x
 
 
 
+**Gradients of fitness functions**
+
+Define fitness functions $F_D,F_{D,p}$ by setting $F_D(A)=F_D(A,0),F_{D,p}(A)=F_{D,p}(A,0)$. 
+
+
+
+
