@@ -72,4 +72,6 @@ $\lambda=(x_1^{2-p}+\dots+x_r^{2-p})^{-1}$, so $p_\alpha=\frac{x_\alpha^{2-p}}{x
 
 Define fitness functions $F_D,F_{D,p}$ by setting $F_D(A)=F_D(A,0),F_{D,p}(A)=F_{D,p}(A,0)$. 
 
-$r\cdot\nabla_X F_D(X)=\sum_{k=1}^{r}\nabla_X \log(\langle Xu_k,v_k\rangle)-\log(\|Xu_k\|)$
+$r\cdot\nabla_X F_D(X)=\sum_{k=1}^{r}\nabla_X (\log(\langle Xu_k,v_k\rangle)-\log(\|Xu_k\|))$
+
+$=\sum_{k=1}^{r}\frac{v_k u_k^\top}{\langle Xu_k,v_k\rangle}-\frac{Xuu^\top}{\|Xu\|^2}$
