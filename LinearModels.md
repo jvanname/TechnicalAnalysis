@@ -75,3 +75,7 @@ Define fitness functions $F_D,F_{D,p}$ by setting $F_D(A)=F_D(A,0),F_{D,p}(A)=F_
 $r\cdot\nabla_X F_D(X)=\sum_{k=1}^{r}\nabla_X (\log(\langle Xu_k,v_k\rangle)-\log(\|Xu_k\|))$
 
 $=\sum_{k=1}^{r}\frac{v_k u_k^T}{\langle Xu_k,v_k\rangle}-\frac{Xu_ku_k^T}{\|Xu_k\|^2}$
+
+$r\cdot\nabla_X F_{D,p}(X)^p=\sum_{k=1}^{r}\nabla_X\frac{\langle Xu_k,v_k\rangle^p}{\|X u_k\|^p}$
+
+
