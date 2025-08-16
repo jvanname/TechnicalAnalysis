@@ -76,7 +76,10 @@ $r\cdot\nabla_X F_D(X)=\sum_{k=1}^{r}\nabla_X (\log(\langle Xu_k,v_k\rangle)-\lo
 
 $=\sum_{k=1}^{r}\frac{v_k u_k^T}{\langle Xu_k,v_k\rangle}-\frac{Xu_ku_k^T}{\|Xu_k\|^2}$
 
-$r\cdot\nabla_X F_{D,p}(X)^p=\sum_{k=1}^{r}\nabla_X\frac{\langle Xu_k,v_k\rangle^p}{\|X u_k\|^p}$ and
+$r\cdot\nabla_X F_{D,p}(X)^p=\sum_{k=1}^{r}\nabla_X\frac{\langle Xu_k,v_k\rangle^p}{\|X u_k\|^p}$
 
-$\large\frac{r}{p}\cdot\nabla_X F_{D,p}(X)^p=\sum_{k=1}^{r}\langle Xu_k,v_k\rangle^{p-1}\big(\frac{v_k\cdot\|Xu_k\|^2-\langle Xu_k,v_k\rangle\cdot X u_k}{\|Xu_k\|^{p+2}} \big)\cdot v_k^T$
+$=\sum_{k=1}^{r}\frac{\langle Xu_k,v_k\rangle^p}{\|xu_k\|^p}\cdot p\cdot\nabla_X(\log(\langle Xu_k,v_k\rangle)-\log(\|Xu_k\|)).$ Therefore,
+
+$\frac{r}{p}\nabla_X F_{D,p}(X)^p=\sum_{k=1}^{r}\frac{\langle Xu_k,v_k\rangle^p}{\|X u_k\|^p}\cdot(\frac{v_k u_k^T}{\langle Xu_k,v_k\rangle}-\frac{Xu_ku_k^T}{\|Xu_k\|^2}).$
+
 
